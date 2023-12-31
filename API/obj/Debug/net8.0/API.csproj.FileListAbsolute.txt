@@ -31,3 +31,4 @@ C:\Users\siddhartha.shakya\Desktop\Projects\.net core\Rest api\api\obj\Debug\net
 C:\Users\siddhartha.shakya\Desktop\Projects\.net core\Rest api\api\obj\Debug\net8.0\API.pdb
 C:\Users\siddhartha.shakya\Desktop\Projects\.net core\Rest api\api\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\siddhartha.shakya\Desktop\Projects\.net core\Rest api\api\obj\Debug\net8.0\ref\API.dll
+C:\Users\siddhartha.shakya\Desktop\Projects\.net core\Rest api\api\obj\Debug\net8.0\API.sourcelink.json
