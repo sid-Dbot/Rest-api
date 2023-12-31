@@ -38,15 +38,15 @@ app.MapGet("/weatherforecast", () =>
 
 
 //Routing
-app.Map("/shirts", () =>
+app.MapGet("/shirts", () =>
 {
     return "Getting Shirts..";
 });
-app.MapGet("/shirt{id}", (int id) =>
+app.MapGet("/shirt/{id}", (int id) =>
 {
     return "Getting shirt {id}";
 });
-app.MapPost("/shirt", () =>
+app.MapPost("/shirts", () =>
 {
     return "Returning shirt";
 });
