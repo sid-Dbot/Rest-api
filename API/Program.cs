@@ -44,7 +44,7 @@ app.MapGet("/shirts", () =>
 });
 app.MapGet("/shirt/{id}", (int id) =>
 {
-    return "Getting shirt {id}";
+    return $"Getting shirt {id}";
 });
 app.MapPost("/shirts", () =>
 {
