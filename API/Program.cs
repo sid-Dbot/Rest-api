@@ -5,6 +5,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowSpecificOrigin", builder =>
+        {
+            builder.WithOrigins("http://localhost:5084")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,6 +60,8 @@ app.MapPost("/shirts", () =>
 {
     return "Returning shirt";
 });
+
+app.UseCors("AllowSpecificOrigin");
 
 
 app.Run();
