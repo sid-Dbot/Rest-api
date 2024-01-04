@@ -6,14 +6,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFlutterApp", builder =>
     {
-        options.AddPolicy("AllowSpecificOrigin", builder =>
-        {
-            builder.WithOrigins("http://localhost:5084")
-                   .AllowAnyHeader()
-                   .AllowAnyMethod();
-        });
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
+});
+
 
 var app = builder.Build();
 
@@ -61,7 +62,7 @@ app.MapPost("/shirts", () =>
     return "Returning shirt";
 });
 
-app.UseCors("AllowSpecificOrigin");
+app.UseCors("AllowFlutterApp");
 
 
 app.Run();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\api\\API.csproj": {}
+    "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\api\\API.csproj": {
+    "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\api\\API.csproj",
+        "projectPath": "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\API\\API.csproj",
         "packagesPath": "C:\\Users\\siddhartha.shakya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\api\\obj\\",
+        "outputPath": "C:\\Users\\siddhartha.shakya\\Desktop\\Projects\\.net core\\Rest api\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\siddhartha.shakya\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.0, )"
